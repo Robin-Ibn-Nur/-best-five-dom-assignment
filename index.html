@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- custom css added -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custom css added -->
+
+    <!-- offline bootstrap css link added -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- offline bootstrap css link added -->
+
+    <!-- bootstrap cdn link added -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- bootstrap cdn link added -->
+</head>
+
+<body class="bg-secondary">
+    <section>
+        <div class="bg-image d-flex justify-content-center align-items-center" style=" background-repeat: no-repeat; background-position: center; background-size: cover;
+                background-image: url(images/5205447.jpg);
+                height: 100vh;
+              ">
+            <h1 class="text-white fs-1 fw-bolder text-uppercase">Choose Your Best 🖐 Players</h1>
+        </div>
+    </section>
+    <main>
+        <section class="container mt-5">
+            <!-- player section -->
+            <div class="row row-cols-1  row-cols-md-3 g-4">
+                <!-- player 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="players/mashrafi.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-dark">
+                            <h3 id="player-name" class="card-title text-white">Mashrafi-Bin-Martuja</h3>
+                            <h5 class="text-white">Captain</h5>
+                            <div>
+                                <button onclick="addToCart(this)" class="btn btn-outline-primary btn-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- player 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="players/mahmudullah.png" class="card-img-top " alt="...">
+                        <div class="card-body text-center bg-dark text-white">
+                            <h3 class="card-title">Mahmudullah Riyad</h3>
+                            <p>Allrounder</p>
+
+                            <div>
+                                <button onclick="addToCart(this)" class="btn btn-outline-primary btn-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- selection aria start -->
+                    <div class="card h-100 text-center bg-dark text-white">
+                        <h2>Selected Players <span id="total-person">0</span></h2>
+                        <table class="table text-white">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <td>Player Name</td>
+                                    <td>Position</td>
+                                </tr>
+                            </thead>
+                            <tbody id="players-name" class="text-white">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- selection aria end -->
+                </div>
+                <!-- player 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="players/mustafiz.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-dark text-white">
+                            <h3 class="card-title">Mustafiz</h3>
+                            <p>Left-Hand-Bowler</p>
+                            <div>
+                                <button onclick="addToCart(this)" class="btn btn-outline-primary btn-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- player 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="players/shakib.al.hasan.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-dark text-white">
+                            <h3 class="card-title">Shakib-Al-Hasan</h3>
+                            <p>Allrounder</p>
+                            <div>
+                                <button onclick="addToCart(this)" class="btn btn-outline-primary btn-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Budget aria start -->
+                    <div class="card h-100 text-center">
+
+                        <div class="card-body bg-dark text-white">
+                            <h2>Budget</h2>
+                            <p>Per Player <input id="player-cost" type="text"></p>
+                            <button id="calculate-btn" class="btn btn-outline-primary btn-lg">Calculate</button>
+                            <p>Player Expenses $<span id="total-player-expenses">00</span></p>
+                            <p>Manager <input id="manager-cost" type="text"></p>
+                            <p>Coach <input id="coach-cost" type="text"></p>
+                            <button id="calculate-total-btn" class="btn btn-outline-primary btn-lg">Calculate Total</button>
+                            <p class="mt-5">Total $<span id="total-cost">00</span></p>
+                        </div>
+                    </div>
+                    <!-- Budget aria end -->
+                </div>
+                <!-- player 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="players/mus.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-dark text-white">
+                            <h3 class="card-title">Mushfiqur Rahim</h3>
+                            <p>Wicket Keeper</p>
+                            <div>
+                                <button onclick="addToCart(this)" class="btn btn-outline-primary btn-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- player 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="players/tamim.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center bg-dark text-white">
+                            <h3 class="card-title">Tamim Iqbal</h3>
+                            <p>Left-Hand-Batsman</p>
+                            <div>
+                                <button onclick="addToCart(this)" class="btn btn-outline-primary btn-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- project js file added  -->
+    <script src="selectplayers.js"></script>
+    <script src="best-five.js"></script>
+    <!-- project js file added  -->
+
+    <!-- bootstrap cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap cdn link -->
+
+    <!-- bootstrap offline link -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <!-- bootstrap offline link -->
+</body>
+
+</html>
