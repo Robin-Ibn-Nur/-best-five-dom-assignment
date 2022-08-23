@@ -14,14 +14,9 @@ function addToCart(name) {
 
     const players = document.getElementById('total-person').innerText = selectedPlayer.length;
 
-    if (selectedPlayer.length === 5) {
-        const buttons = document.querySelectorAll('.btn');
-        alert('You have added the maximum number of players')
-        for (const button of buttons) {
-            // Set the disabled attribute
-            button.setAttribute('disabled', '');
-
-        }
+    name.disabled = true;
+    if (5 <= selectedPlayer.length) {
+        alert('You have added the maximum number of players');
     }
 
 }
