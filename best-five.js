@@ -18,29 +18,29 @@ function addToCart(name) {
         const buttons = document.querySelectorAll('.btn');
         alert('You allredy selected five players')
         for (const button of buttons) {
-            // ✅ Set the disabled attribute
+            // Set the disabled attribute
             button.setAttribute('disabled', '');
-            
 
-            // ✅ Remove the disabled attribute
-            // button.removeAttribute('disabled');
         }
     }
 
 }
 
 
+// adding addEventListener on calculate-btn
 document.getElementById('calculate-btn').addEventListener('click', function () {
+    // Get players salary value
     const player = document.getElementById('player-cost');
     const playersSalary = player.value * selectedPlayer.length;
 
+    // Get total players cost
     const playerExpenses = document.getElementById('total-player-expenses');
     const playerExpensesString = playerExpenses.innerText;
-
-    const totaPlayerCost = parseFloat(playerExpenses.innerText = playersSalary);
+    parseFloat(playerExpenses.innerText = playersSalary);
 })
 
 
+// adding addEventListener on calculate-total-btn
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
     // Get players salary value
     const player = document.getElementById('player-cost');
