@@ -1,3 +1,10 @@
+body {
+    background-color: #07151a;
+}
+.set-text{
+    font-size: 150px;
+}
+
 #calculate-btn {
     border-radius: 10px;
     color: white;

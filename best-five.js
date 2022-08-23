@@ -16,7 +16,7 @@ function addToCart(name) {
 
     if (selectedPlayer.length === 5) {
         const buttons = document.querySelectorAll('.btn');
-        alert('You allredy selected five players')
+        alert('You have added the maximum number of players')
         for (const button of buttons) {
             // Set the disabled attribute
             button.setAttribute('disabled', '');
