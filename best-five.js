@@ -73,15 +73,3 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     parseFloat(cost.innerText = totalAmount);
 
 })
-
-
-
-
-
-
-
-// function disable(x) {
-//     const disable = 5;
-//     x.disable = true;
-//     alert('vai hoise ar tippen na')
-// }
