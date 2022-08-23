@@ -16,10 +16,3 @@ function selectedPlayers(playerName) {
     }
 
 }
-
-// name.disabled = true;
-// if (5 <= selectedPlayer.length) {
-//     alert('You have added the maximum number of players');
-//     selectedPlayer.pop();
-//     return selectedPlayer;
-// }

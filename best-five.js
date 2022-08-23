@@ -12,15 +12,13 @@ function addToCart(name) {
     selectedPlayer.push(nameAndPosition);
     selectedPlayers(selectedPlayer);
 
-    document.getElementById('total-person').innerText = selectedPlayer.length;
-
-
     name.disabled = true;
-    if (5 <= selectedPlayer.length) {
+    if (selectedPlayer.length >= 5) {
         alert('You have added the maximum number of players');
-        selectedPlayer.pop();
-        return selectedPlayer;
+        return selectedPlayer.pop();
     }
+
+    document.getElementById('total-person').innerText = selectedPlayer.length;
 
 
 }
