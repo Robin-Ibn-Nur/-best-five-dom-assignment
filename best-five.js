@@ -12,11 +12,19 @@ function addToCart(name) {
     selectedPlayer.push(nameAndPosition);
     selectedPlayers(selectedPlayer);
 
-    document.getElementById('total-person').innerText = selectedPlayer.length;
+    const players = document.getElementById('total-person').innerText = selectedPlayer.length;
 
     if (selectedPlayer.length === 5) {
-        alert('please stop')
+        const buttons = document.querySelectorAll('.btn');
+        alert('You allredy selected five players')
+        for (const button of buttons) {
+            // ✅ Set the disabled attribute
+            button.setAttribute('disabled', '');
+            
 
+            // ✅ Remove the disabled attribute
+            // button.removeAttribute('disabled');
+        }
     }
 
 }
@@ -66,6 +74,12 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     parseFloat(cost.innerText = totalAmount);
 
 })
+
+
+
+
+
+
 
 // function disable(x) {
 //     const disable = 5;
