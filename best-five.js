@@ -10,7 +10,7 @@ function addToCart(name) {
     }
 
     selectedPlayer.push(nameAndPosition);
-    selectedPlayers(selectedPlayer);
+    selectedPlayer(selectedPlayer);
 
     name.disabled = true;
     if (selectedPlayer.length >= 5) {
