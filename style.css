@@ -1,8 +1,11 @@
 body {
     background-color: #07151a;
 }
-.set-text{
+
+.set-text {
     font-size: 150px;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #calculate-btn {
