@@ -1,3 +1,43 @@
-/* .body {
-    background-repeat: no-repeat;
-} */
+#calculate-btn {
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+#calculate-btn:hover {
+    background-color: #07151a;
+    color: white;
+}
+
+#calculate-total-btn {
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+#calculate-total-btn:hover {
+    background-color: #07151a;
+    color: white;
+}
