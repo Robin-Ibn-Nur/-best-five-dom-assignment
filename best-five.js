@@ -71,3 +71,4 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     parseFloat(cost.innerText = totalAmount);
 
 })
+// 
